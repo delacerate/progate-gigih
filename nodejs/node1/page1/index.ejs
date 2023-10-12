@@ -8,8 +8,7 @@
   </head>
   <body>
     <header>
-      <!-- Tambahkan attribute href -->
-      <a href="/" class="header-logo"  >LIST</a>
+      <a href="/" class="header-logo">LIST</a>
     </header>
     <div class="container">
       <div class="container-header">
@@ -23,15 +22,15 @@
         <% const items = [
           {id: 1, name: 'kentang'},
           {id: 2, name: 'wortel'},
-          {id: 3, name: 'bawang'}
-        ]; %>
+          {id: 3, name: 'bawang'},
+        ] %>
         <ul class="table-body">
           <% items.forEach((item) => { %>
             <li>
               <span class="id-column"><%= item.id %></span>
               <span class="name-column"><%= item.name %></span>
             </li>
-          <% }); %>
+          <% }) %>
         </ul>
       </div>
     </div>
